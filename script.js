@@ -85,3 +85,42 @@ all lines are cool`;
 console.log(output3);
 
 const output4 = "test ping line text doooo all lines are cool";
+
+//String methods
+
+//Length method = find length of any string
+const browserType = "mozzile";
+console.log(browserType.length);
+
+
+
+//Finding specifc char from string use [0]
+//first char is ALWAYS [0] position
+
+browserType[0];
+
+//For finding last char of any string
+
+browserType[browserType.length-1];
+
+
+//FINDING SUBSTRING IN STRING = use includes() method, returns true or false
+
+let stringTester2000 = "mozilla";
+
+if (stringTester2000.includes("zilla")){
+    console.log("zilla found");
+} else {
+    console.log("zilla not found");
+}
+
+
+// to find if string end or start with particular string use startWith() or endsWith()
+
+
+// indexOf() = returns first position of wanted string from sample starting from 0, returns -1 if nothing found
+
+const tagline = "MDN - Resources for developers, by developers";
+console.log(tagline.indexOf("developers")); // 20
+
+// Use loop and indexOf last string position start to find all string position in a text 
